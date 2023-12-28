@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CANVAS API</title>
+  <script type="text/javascript" language="javascript"> 
+    function desenhar(){
+      context = document.getElementById("desenho").getContext("2d");
+      desenhaAnimacao();
+    }
+    function desenhaAnimacao()
+    {
+      context.clearReact(0,0,960,480);
+      context.translate(30,30);
+      context.rotate(0.1);
+      context.beginPath();
+      context.moveTo(10,0);
+      context.lineTo(20,30);
+      context.lineTo(0,30);
+      context.closePath();
+      context.stroke();
+    }
+  </script>
+</head>
+<body onload="desenhar()">
+  <canvas id="desenho" width="960" height="480"></canvas>
+</body>
+</html>

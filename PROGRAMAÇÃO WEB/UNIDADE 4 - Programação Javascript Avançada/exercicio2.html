@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>script</title>
+  <script type="text/javascript" language="javascript"> 
+    function carregarDinamicamente(){
+      var paragrafo = document.createElement("p");
+      var conteudo = document.createTextNode("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptate, vitae accusamus adipisci laborum, quisquam suscipit quod quibusdam deleniti sit minus dolorem pariatur, culpa dignissimos ipsum eum? Dolore, esse quos.")
+
+      paragrafo.appendChild(conteudo);
+      document.getElementsByTagName("body")[0].appendChild(paragrafo);
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptate, vitae accusamus adipisci laborum, quisquam suscipit quod quibusdam deleniti sit minus dolorem pariatur, culpa dignissimos ipsum eum? Dolore, esse quos.

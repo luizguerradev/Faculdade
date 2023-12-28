@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SET TIME OUT</title>
+  <script type="text/javascript" language="javascript"> 
+    function iniciar(){
+      setTimeout(function(){
+        var p = document.getElementById("paragrafo");
+        p.innerHTML = "Olá Mundo ..."
+      }, 2000);
+    }
+  </script>
+</head>
+<body onload="iniciar()">
+  <p id="paragrafo"> </p>
+</body>
+</html>
